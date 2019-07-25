@@ -37,8 +37,8 @@
             Resources="" />
 
         <!--sustained performance-->
-        <!-- B CPU - Cluster min freq ~1.03GHz -->
-        <!-- L CPU - Cluster min freq ~1.05GHz -->
+        <!-- B CPU - Cluster min freq ~1.05GHz -->
+        <!-- L CPU - Cluster min freq ~1.03GHz -->
         <!-- B CPU - Cluster max freq ~1.80GHz -->
         <!-- GPU - min pwrlevel 2 -->
         <!-- GPU - max pwrlevel 0 -->
@@ -361,18 +361,6 @@
         <Config
             Id="0x0000133B" Enable="true" Timeout="0" Target="msmnile"
             Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71"/>
-
-        <!-- Gallery Slow Motion Playback -->
-        <!-- L CPU - Cluster min freq ~1.785GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1785 -->
-        <!-- B CPU - Cluster min freq ~2.419GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 2419 -->
-        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 10 -->
-        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 20 -->
-        <!-- LLCBW min: MPCTLV3_LLCBW_HWMON_MIN_FREQ (0x43000000) : 68 (6881) :  -->
-        <!-- L3 memlat min MPCTLV3_L3_MEMLAT_MIN_FREQ (0x43400000) : 14 (1478) : -->
-        <Config
-            Id="0x00001350" Enable="true" Timeout="5000" Target="msmnile"
-            Resources="0x40800100, 1785, 0x40800000, 2419, 0x40C20000, 10, 0x40C1C000, 20,
-            0x43000000, 68, 0x43400000, 14"/>
 
     </Powerhint>
 </HintConfigs>
